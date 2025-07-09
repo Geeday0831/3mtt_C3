@@ -13,7 +13,7 @@ const Appearance = () => {
         setPosts(response.data);
         setLoading(false);
       })
-      .catch((err) => {
+      .catch(() => {
         setError('Failed to fetch data.');
         setLoading(false);
       });
